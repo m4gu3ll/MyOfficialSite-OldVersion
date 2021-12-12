@@ -1,0 +1,110 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+  
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden; /* Usuń tę linijkę jeśli chcesz żeby strona się przewijała w górę i dół */
+}
+
+body {
+    font-family: 'Cabin', sans-serif !important;
+    background-color: #1d1c1c;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+#particles {
+    width: 100%;
+    height: 100%;
+}
+  
+#intro {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 25px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+}
+
+.btn-primary {
+    background-image: linear-gradient(to right, #03affe 0%, #2bff00  51%, #03affe  100%);
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.btn-primary:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background-color: #2C2F33 !important;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.site {
+    position: relative;
+    bottom: 80%;
+    color: #fff;
+    text-align: center;
+    background-position: bottom;
+    background-size: 300%;
+    background-repeat: no-repeat;
+}
+
+.sidebar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
